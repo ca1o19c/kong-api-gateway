@@ -99,8 +99,8 @@ services:
     tty: true
     networks:
       - kong-net
-    # volumes:
-    #   - kong_data:/var/lib/postgresql/data
+    volumes:
+      - kong_data:/var/lib/postgresql/data
 
   konga-prepare:
     container_name: konga-prepare
